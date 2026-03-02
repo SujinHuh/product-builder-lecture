@@ -1,14 +1,110 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Backend Engineer Curriculum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@100;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <div class="container">
+            <h1 class="glitch" data-text="BACKEND ROADMAP 2026">BACKEND ROADMAP 2026</h1>
+            <p class="subtitle">AI & DevOps로 완성하는 차세대 백엔드 개발자 커리큘럼</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 1. Backend Section -->
+        <section id="backend" class="roadmap-section primary">
+            <div class="section-badge">01. CORE PHASE</div>
+            <h2>Professional Backend Developer</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Language & Runtime</h3>
+                    <ul>
+                        <li>Java / Spring Boot (Deep Dive)</li>
+                        <li>Go / Python (Concurrency & Performance)</li>
+                        <li>Node.js / TypeScript</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Data Architecture</h3>
+                    <ul>
+                        <li>Relational DB (PostgreSQL, MySQL)</li>
+                        <li>NoSQL (MongoDB, Redis, Cassandra)</li>
+                        <li>Query Optimization & Data Modeling</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>System Design</h3>
+                    <ul>
+                        <li>Microservices Architecture (MSA)</li>
+                        <li>RESTful, GraphQL, gRPC APIs</li>
+                        <li>Message Queues (Kafka, RabbitMQ)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. AI Section -->
+        <section id="ai" class="roadmap-section secondary">
+            <div class="section-badge">02. NEXT STEP</div>
+            <h2>AI-Integrated Backend</h2>
+            <div class="grid">
+                <div class="card ai-card">
+                    <h3>LLM Integration</h3>
+                    <ul>
+                        <li>OpenAI / Anthropic API Mastery</li>
+                        <li>LangChain & LlamaIndex Frameworks</li>
+                        <li>Function Calling & Tool Use</li>
+                    </ul>
+                </div>
+                <div class="card ai-card">
+                    <h3>RAG System</h3>
+                    <ul>
+                        <li>Vector Databases (Pinecone, Weaviate)</li>
+                        <li>Embedding Models & Retrieval Tuning</li>
+                        <li>AI Data Pipelines</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. DevOps Section -->
+        <section id="devops" class="roadmap-section tertiary">
+            <div class="section-badge">03. INFRASTRUCTURE</div>
+            <h2>Cloud & DevOps</h2>
+            <div class="grid">
+                <div class="card devops-card">
+                    <h3>Containerization</h3>
+                    <ul>
+                        <li>Docker & Container Orchestration</li>
+                        <li>Kubernetes (K8s) Core Concepts</li>
+                        <li>Helm & Service Mesh</li>
+                    </ul>
+                </div>
+                <div class="card devops-card">
+                    <h3>Automation (CI/CD)</h3>
+                    <ul>
+                        <li>GitHub Actions / Jenkins Pipelines</li>
+                        <li>Infrastructure as Code (Terraform)</li>
+                        <li>Monitoring (Prometheus, Grafana)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Product Builder Lecture. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
