@@ -273,27 +273,42 @@ li::before {
     filter: brightness(1.1);
 }
 
-.form-status {
-    margin-top: 1.5rem;
-    padding: 1rem;
-    border-radius: 8px;
+/* Modern Success Display */
+.success-display {
     text-align: center;
-    font-weight: bold;
-    display: none;
+    padding: 2rem;
+    animation: fadeIn 0.5s ease;
 }
 
-.form-status.success {
-    display: block;
-    background: rgba(0, 255, 136, 0.1);
-    color: #00ff88;
-    border: 1px solid #00ff88;
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
-.form-status.error {
-    display: block;
-    background: rgba(255, 0, 0, 0.1);
-    color: #ff4d4d;
-    border: 1px solid #ff4d4d;
+.success-display h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.reset-btn {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+    background: var(--primary-color);
+    color: #000;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 footer {

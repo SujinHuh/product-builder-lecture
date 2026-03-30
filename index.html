@@ -107,8 +107,11 @@
         <section id="contact" class="roadmap-section quaternary">
             <div class="section-badge">04. PARTNERSHIP</div>
             <h2>Affiliate Inquiry</h2>
-            <div class="contact-container">
+            <div class="contact-container" id="contact-wrapper">
                 <form id="contact-form" action="https://formspree.io/f/xpqodrwz" method="POST" class="contact-form">
+                    <!-- 봇 방지를 위한 숨겨진 필드 (Honeypot) -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -121,9 +124,18 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
                     </div>
-                    <button type="submit" id="submit-btn" class="submit-btn">Send Inquiry</button>
-                    <div id="form-status" class="form-status"></div>
+                    <button type="submit" id="submit-btn" class="submit-btn">
+                        <span class="btn-text">Send Inquiry</span>
+                        <span class="btn-loader" style="display:none">Sending...</span>
+                    </button>
                 </form>
+                <!-- 성공 메시지 영역 -->
+                <div id="success-message" style="display:none" class="success-display">
+                    <div class="success-icon">✅</div>
+                    <h3>문의가 성공적으로 전달되었습니다!</h3>
+                    <p>확인 후 빠른 시일 내에 답변 드리겠습니다.</p>
+                    <button onclick="location.reload()" class="reset-btn">새 문의 보내기</button>
+                </div>
             </div>
         </section>
     </main>
