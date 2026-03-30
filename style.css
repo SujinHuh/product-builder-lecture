@@ -273,6 +273,29 @@ li::before {
     filter: brightness(1.1);
 }
 
+.form-status {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+.form-status.success {
+    display: block;
+    background: rgba(0, 255, 136, 0.1);
+    color: #00ff88;
+    border: 1px solid #00ff88;
+}
+
+.form-status.error {
+    display: block;
+    background: rgba(255, 0, 0, 0.1);
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+}
+
 footer {
     padding: 4rem 0;
     text-align: center;
